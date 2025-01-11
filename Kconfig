@@ -61,7 +61,6 @@ config SECURITY_SELINUX_DISABLE
 config SECURITY_SELINUX_DEVELOP
 	bool "NSA SELinux Development Support"
 	depends on SECURITY_SELINUX
-	select SECURITY_SELINUX_DEVELOP
 	default y
 	help
 	  This enables the development support option of NSA SELinux,
@@ -75,7 +74,6 @@ config SECURITY_SELINUX_DEVELOP
 config SECURITY_SELINUX_ALWAYS_ENFORCE
 	bool "NSA SELinux Always Enforcing"
 	depends on SECURITY_SELINUX_DEVELOP
-	select SECURITY_SELINUX_DEVELOP
 	default n
 	help
 	  This option will prevent anything from setting SELinux to permissive.
